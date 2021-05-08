@@ -1,0 +1,211 @@
+/*--=======================================================================
+general section
+==========================================================================--*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+body{
+    background-image: url(../images/Awards/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(10, 8, 74);
+    position: relative;
+    left: 8.2%;
+    top: 90px;
+    border-bottom: 10px solid rgb(10, 8, 74);
+    font-size: 50px;
+    padding-bottom: 10px;
+    width: 100px;
+    z-index: -20;
+}
+h2{
+    color: rgb(10, 8, 74);
+    flex: 1;
+}
+input{
+    display: none;
+}
+.bg_bar{
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    top: 325px;
+    background: rgb(195, 195, 216);
+    z-index: -1;
+}
+/*--=======================================================================
+awards section
+==========================================================================-*/
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+}
+.slide .awards, .slide .details{
+    flex-basis: 10%;
+}
+.awards{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.awards .award_box{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+.awards .award_box img{
+    width: 250px;
+    height: 300px;
+    flex: 1;
+    margin: 30px;
+    filter: drop-shadow(0px 0px 5px #636363);
+    transition: 1s;
+    z-index: -1;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+/*--=======================================================================
+navigations section
+==========================================================================--*/
+.navigations{
+    position: absolute;
+    right: 300px;
+    top: 430px;
+}
+
+label{
+    flex: 1;
+    display: inline-block;
+    border: 1px solid rgb(10, 8, 74);
+    width: 10px ;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: .25s;
+}
+label:hover{
+    background-color: rgb(10, 8, 74);
+}
+.arrow:hover{
+    cursor: pointer;
+}
+#r2:checked ~ #first{
+    margin-top: -310px;
+}
+#r3:checked ~ #first{
+    margin-top: -670px;
+}
+#r4:checked ~ #first{
+    margin-top: -1030px;
+}
+#r5:checked ~ #first{
+    margin-top: -1380px;
+}
+#r6:checked ~ #first{
+    margin-top: -1740px;
+}
+#r7:checked ~ #first{
+    margin-top: -2100px;
+}
+#r8:checked ~ #first{
+    margin-top: -2450px;
+}
+#r9:checked ~ #first{
+    margin-top: -2820px;
+}
+#r10:checked ~ #first{
+    margin-top: -3200px;
+}
+#r1:checked ~ .navigations #lb1{
+    background-color: rgb(10, 8, 74);
+}
+#r2:checked ~ .navigations #lb2{
+    background-color: rgb(10, 8, 74);
+}
+#r3:checked ~ .navigations #lb3{
+    background-color: rgb(10, 8, 74);
+}
+#r4:checked ~ .navigations #lb4{
+    background-color: rgb(10, 8, 74);
+}
+#r5:checked ~ .navigations #lb5{
+    background-color: rgb(10, 8, 74);
+}
+#r6:checked ~ .navigations #lb6{
+    background-color: rgb(10, 8, 74);
+}
+#r7:checked ~ .navigations #lb7{
+    background-color: rgb(10, 8, 74);
+}
+#r8:checked ~ .navigations #lb8{
+    background-color: rgb(10, 8, 74);
+}
+#r9:checked ~ .navigations #lb9{
+    background-color: rgb(10, 8, 74);
+}
+#r10:checked ~ .navigations #lb10{
+    background-color: rgb(10, 8, 74);
+}
+.arrow-check{
+    stroke: gray;
+}
+/*--=======================================================================
+Responsiveness section
+==========================================================================--*/
+@media only screen and (max-width: 1024px){
+    label{
+        display: none;
+    }
+    h1{
+        top: 30px;
+        font-size: 2.8em;
+    }
+    .awards{
+        margin-top: 0;
+        flex: 1;
+    }
+    .bg_bar{
+        top: 365px;
+    }
+    .details{
+        flex: 1;
+    }
+}
+@media only screen and (max-width: 768px){
+    label{
+        display: none;
+    }
+    .bg_bar{
+        top:300px;
+    }
+    .slide{
+        margin-top: -50px;;
+    }
+    h1{
+        color: rgb(10, 8, 74);
+        font-size: 2.5em;
+        top: 10px;
+    }
+}

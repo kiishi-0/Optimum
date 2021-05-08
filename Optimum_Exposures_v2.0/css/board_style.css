@@ -1,0 +1,149 @@
+/*--=======================================================================
+General section
+==========================================================================--*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('..images/board/Group_19.jpg');
+}
+.head_pic{
+    background-image: url('../images/board/Group-18.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1{
+    padding-left: 20px;
+    color: #ffffff;
+    border-left: 10px solid #ffffff;
+    font-size: 050px;
+    margin: 100px;
+}
+/*--=======================================================================
+header section
+==========================================================================--*/
+.head_pic img{
+    width: 100%;
+    height: 100%;
+}
+/*--=======================================================================
+Board Members section
+==========================================================================--*/
+.board1{
+    display: flex;
+    width: 100%;
+    margin: 50px 0 0 0;
+    min-height: 350px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 8, 74, 0.14);
+}
+.bm{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+.board2 .ceo{
+    padding: 50px 0 50px 0;
+}
+ .board3 .ceo, .board4 .ceo, .board5 .ceo, .board6 .ceo{
+    border-top: 1px solid rgb(145, 145, 145, 0.14);
+    padding: 50px 0 50px 0;
+}
+.board6 .ceo{
+    margin-bottom: 70px;
+}
+.ceo{
+    display: flex;
+    width: 84%;
+    align-self: center;
+    align-items: stretch;
+    justify-content: end;
+}
+.ceo .info{
+    flex: 5;
+    display: flex;
+    height: 100%;
+    width: 40%;
+    margin-right: 20px;
+    align-items: flex-start;
+}
+.ceo .info .names{
+    display: block;
+    text-align: left;
+    border-left: 5px solid #0A084A;
+    padding: 0 20px ;
+    width: 350px;
+}
+.ceo .info .names h2, .ceo .info .names h4{
+    color: rgb(10, 8, 74)
+}
+.ceo .info .names h2{
+    font-weight: normal;
+    font-size: 35px;
+}
+.ceo .info .names p{
+    color: rgb(65, 65, 65);
+}
+.ceo .content p{
+    color:rgb(65, 65, 65);
+    font-size:15px;
+}
+
+/*--=======================================================================
+Responsiveness section
+==========================================================================--*/
+
+@media only screen and (max-width:1024px){
+    .pic img{
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media only screen and  (max-width: 800px){
+    .bm{
+        width: 100%;
+    }
+    .head_pic{
+        height: 50%;
+        justify-content: space-around;
+        align-items: center
+    }
+    .pic img{
+        width: 150px;
+        height: auto;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .ceo{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    .ceo .info{
+        padding: 20px 20px;
+        width: 100%
+    }
+    .ceo .content{
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .head_pic{
+        height: 40%;
+    }
+    /* h1{
+        top: 100px;
+    } */
+}

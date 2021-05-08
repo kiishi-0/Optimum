@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+/* ==========================================================================
+landing page section
+========================================================================== */
+.about_landing_page{
+  min-width: 100%;
+  min-height: 450px;
+  background-image: url(../images/about_us/about_landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  padding-top: 150px;
+}
+.about_landing_page .landing_text_box{
+  max-width: 80%;
+  min-height: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px 20px 20px 20px;
+  color:#0a084a;
+  margin: 0 auto;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur( 5px);
+}
+.about_landing_page .landing_text_box .text1{
+  font-size: 50px;
+  border-bottom: 5px solid #0a084a;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.about_landing_page .landing_text_box p{
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: light;
+}
+@media (max-width: 800px){
+  .about_landing_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 70px;
+    min-height: 700px;
+  }
+  .about_landing_page .landing_text_box{
+    max-width: 80%;
+    min-height: 500px;
+    margin-bottom: 20px;
+  }
+  .about_landing_page .landing_text_box .text1{
+    font-size: 40px;
+    width: 200px;
+  }
+}
+/* ==========================================================================
+business page section
+========================================================================== */
+.business_section{
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.business_section .part_1, .business_section .part_2{
+  flex-basis: 50%;
+}
+.business_section .part_1{
+  flex:1;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.business_section .part_1 p{
+  font-size: 16px;
+  line-height: 30px;
+  color: #514949
+}
+.business_section .part_1 h2{
+  color: #0a084a;
+  border-bottom: 5px solid #0a084a;
+  width: 230px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.business_section .part_2{
+  flex:1;
+  background: #0a084a;
+
+}
+/* ==========================================================================
+terms section
+========================================================================== */
+.term_section{
+  min-height: 500px;
+  max-width: 100%;
+  background-image: url(../images/about_us/terms.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px 20px 10px;
+  flex-direction: column;
+}
+.terms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.term_section h2{
+  color: #0a084a;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #0a084a;
+ text-align: left;
+}
+
+.term_section .terms .part1, .term_section .terms .part2, .term_section .terms .part3{
+  width: 80%;
+  min-height: 200px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px;
+}
+.term_section .part1 h3, .term_section .part2 h3, .term_section .part3 h3{
+  color: #0a084a;
+}
+.term_section .part1 p, .term_section .part2 p, .term_section .part3 p{
+  font-size: 16px;
+  line-height: 25px;
+  color: #514949; 
+}
+

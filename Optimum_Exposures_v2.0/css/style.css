@@ -172,7 +172,7 @@ about section
   min-width: 100%;
   min-height: 350px;
   padding: 100px 0 100px 0;
-  background-image: url(../images/Home/about.png);
+  background-image: url('../images/Home/about.png');
   background-position: bottom;
   color: #0a084a;
   display: flex;
